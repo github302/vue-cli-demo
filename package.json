@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open --copy --mode staging",
     "build": "vue-cli-service build",
+    "debug": "node --inspect --inspect-brk ./server/app.js",
+    "debug-webpack": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -22,6 +24,9 @@
     "@vue/cli-service": "^4.1.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
+    "commitizen": "^4.0.3",
+    "conventional-changelog": "^3.1.18",
+    "cz-conventional-changelog": "^3.1.0",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
@@ -30,5 +35,10 @@
     "sass-loader": "^8.0.0",
     "typescript": "~3.5.3",
     "vue-template-compiler": "^2.6.10"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

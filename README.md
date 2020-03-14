@@ -1,4 +1,5 @@
 # vue-cli-demo
+node 10
 
 ## Project setup
 ```

@@ -3,6 +3,11 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      {{ message }}
+      <button-counter></button-counter>
+      <component-a></component-a>
+      <componentB></componentB>
+      <component-c></component-c>
     </div>
     <router-view />
   </div>
@@ -30,3 +35,21 @@
   }
 }
 </style>
+<script>
+import componentA from './components/componentA';
+import componentB from './components/componentB';
+import componentC from './components/componentC';
+
+export default {
+  data() {
+    return {
+      message: "hello App"
+    };
+  },
+  components: {
+    componentA,
+    componentB,
+    componentC,
+  }
+};
+</script>
