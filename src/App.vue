@@ -6,8 +6,9 @@
       {{ message }}
       <button-counter></button-counter>
       <component-a></component-a>
-      <componentB></componentB>
+      <component-b></component-b>
       <component-c></component-c>
+      <component :is="componentName" />
     </div>
     <router-view />
   </div>
@@ -43,7 +44,8 @@ import componentC from './components/componentC';
 export default {
   data() {
     return {
-      message: "hello App"
+      message: "hello App",
+      componentName: "shuai"
     };
   },
   components: {

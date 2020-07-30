@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve --open --copy --mode staging",
     "build": "vue-cli-service build",
     "debug": "node --inspect --inspect-brk ./server/app.js",
-    "debug-webpack": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "lint": "vue-cli-service lint"
+    "debug-webpack": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {
     "core-js": "^3.4.4",
